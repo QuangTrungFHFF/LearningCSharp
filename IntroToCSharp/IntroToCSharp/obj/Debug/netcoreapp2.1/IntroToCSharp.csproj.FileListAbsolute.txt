@@ -1,0 +1,11 @@
+E:\Study\Programming\Code001\IntroToCSharp\IntroToCSharp\bin\Debug\netcoreapp2.1\IntroToCSharp.deps.json
+E:\Study\Programming\Code001\IntroToCSharp\IntroToCSharp\bin\Debug\netcoreapp2.1\IntroToCSharp.runtimeconfig.json
+E:\Study\Programming\Code001\IntroToCSharp\IntroToCSharp\bin\Debug\netcoreapp2.1\IntroToCSharp.runtimeconfig.dev.json
+E:\Study\Programming\Code001\IntroToCSharp\IntroToCSharp\bin\Debug\netcoreapp2.1\IntroToCSharp.dll
+E:\Study\Programming\Code001\IntroToCSharp\IntroToCSharp\bin\Debug\netcoreapp2.1\IntroToCSharp.pdb
+E:\Study\Programming\Code001\IntroToCSharp\IntroToCSharp\obj\Debug\netcoreapp2.1\IntroToCSharp.csprojAssemblyReference.cache
+E:\Study\Programming\Code001\IntroToCSharp\IntroToCSharp\obj\Debug\netcoreapp2.1\IntroToCSharp.csproj.CoreCompileInputs.cache
+E:\Study\Programming\Code001\IntroToCSharp\IntroToCSharp\obj\Debug\netcoreapp2.1\IntroToCSharp.AssemblyInfoInputs.cache
+E:\Study\Programming\Code001\IntroToCSharp\IntroToCSharp\obj\Debug\netcoreapp2.1\IntroToCSharp.AssemblyInfo.cs
+E:\Study\Programming\Code001\IntroToCSharp\IntroToCSharp\obj\Debug\netcoreapp2.1\IntroToCSharp.dll
+E:\Study\Programming\Code001\IntroToCSharp\IntroToCSharp\obj\Debug\netcoreapp2.1\IntroToCSharp.pdb
