@@ -12,12 +12,16 @@ namespace NumberConversion
             Console.WriteLine("1> Convert Decimal to Binary.");
             Console.WriteLine("2> Convert Binary to Decimal.");
             Console.WriteLine("3> Convert Decimal to Hexadecimal.");
-            Console.WriteLine("4> Convert Hexadecimal to Decimal.");
-            
+            Console.WriteLine("4> Convert Binary to Hexadecimal.");
+            Console.WriteLine("5> Convert Hexadecimal to Decimal.");
+            Console.WriteLine("6> Convert Hexadecimal to Binary.");
+            Console.WriteLine("7> Convert Roman digits to Arabic.");
+            Console.WriteLine("8> Convert Arabic to Roman.");
+
             string choiceS = Console.ReadLine();
             int num=0;
             string inputK = null;
-            if (int.Parse(choiceS)<4)
+            if (int.Parse(choiceS)<5)
             {
                 Console.WriteLine("-------------------------------------------------");
 
@@ -36,7 +40,7 @@ namespace NumberConversion
             else
             {
                 Console.WriteLine("-------------------------------------------------");
-                Console.WriteLine("Please enter a hex number!");
+                Console.WriteLine("Please enter a number!");
                 string inputS = Console.ReadLine();
                 inputK = inputS;
             }
@@ -125,8 +129,34 @@ namespace NumberConversion
                     break;
                 // [/Marked]
 
-                // [Marked] Hexadecimal to Decimal.
+
+                // [Marked] Binary to Hexadecimal.
                 case "4":
+                    if (num <0 )
+                    {
+                        Console.WriteLine("Invalid number to convert.");
+                    }
+                    else
+                    {
+                        //string inputB = num.ToString();
+                        string result = null;
+                        Calculator pow = new Calculator();
+                        string remainder;
+                        while(num>0)
+                        {
+                            remainder = (num % 10000).ToString();
+                            result += pow.hexTransReverseBinary(remainder);
+                            num /= 10000;
+                        }
+                        result = pow.ReverseText(result);                
+                        Console.WriteLine(result);
+                    }
+                    break;
+                // [/Marked]
+
+
+                // [Marked] Hexadecimal to Decimal.
+                case "5":
                     if (inputK == null)
                     {
                         Console.WriteLine("Invalid number to convert.");
@@ -144,6 +174,97 @@ namespace NumberConversion
                             count++;
                         }        
                         Console.WriteLine(resultD);
+                    }
+                    break;
+                // [/Marked]
+
+                // [Marked] Hexadecimal to Binary.
+                case "6":
+                    if (inputK == null)
+                    {
+                        Console.WriteLine("Invalid number to convert.");
+                    }
+                    else
+                    {
+                        
+                        string result = null;
+                        Calculator pow = new Calculator();
+                        //inputK = pow.ReverseText(inputK);
+
+                        foreach (char c in inputK)
+                        {
+                            result += pow.hexTransReverseBinary(c);
+                            
+                        }
+                        Console.WriteLine(result);
+                    }
+                    break;
+                // [/Marked]
+
+                // [Marked] Roman digits to Arabic.
+                case "7":
+                    if (inputK == null)
+                    {
+                        Console.WriteLine("Invalid number to convert.");
+                    }
+                    else
+                    {
+                        int result = 0;
+                        int saveNum = 0;
+                        int preNum = 0;
+                        Calculator trans = new Calculator();
+                        //inputK = trans.ReverseText(inputK);
+                        int length = inputK.Length - 1; 
+                        for(int i = length;i>=0;i--)
+                        {
+                            preNum = saveNum;
+                            saveNum = trans.Roman_Parse(inputK[i].ToString());
+                            
+                            if (saveNum>=preNum)
+                            {
+                                result += saveNum;
+                            }
+                            else
+                            {
+                                result -= saveNum;
+                            }
+                        }
+
+                        Console.WriteLine(result);
+
+
+                    }
+                    break;
+                // [/Marked]
+
+                // [Marked] Arabic to Roman.
+                case "8":
+                    if (inputK == null)
+                    {
+                        Console.WriteLine("Invalid number to convert.");
+                    }
+                    else
+                    {
+                        int inNum = int.Parse(inputK);
+
+                        string result = null;
+                        
+                        Calculator trans = new Calculator();
+                        if (inNum>3999)
+                        {
+                            Console.WriteLine("This number is too big");
+                        }
+                        else
+                        {
+                            result += trans.Ara_Parse(inNum);
+                        }
+                        
+
+                        
+
+                        Console.WriteLine(result);
+
+
                     }
                     break;
                     // [/Marked]
