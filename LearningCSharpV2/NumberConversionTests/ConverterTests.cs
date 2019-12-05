@@ -1,4 +1,7 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NumberConversionV2;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Numerics;
 
 namespace NumberConversionV2.Tests
 {
@@ -79,6 +82,23 @@ namespace NumberConversionV2.Tests
             int[] actualResult = sortArrayCheck.SortArray(numArray);
             //Assert
             CollectionAssert.AreEqual(expectedResult, actualResult);
+        }
+
+        [TestMethod()]
+
+
+        public void GetFactorialTest()
+        {
+            //Arrange
+            BigInteger actualResult = new BigInteger();
+            BigInteger expectedResult = new BigInteger();
+            expectedResult = 3628800;
+            var factorialCheck = new Converter();
+            //Act
+            factorialCheck.GetFactorial(10);
+            actualResult = factorialCheck.result;
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
         }
     }
 }

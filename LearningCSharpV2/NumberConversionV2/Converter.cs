@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 
 namespace NumberConversionV2
 {
@@ -147,8 +148,22 @@ namespace NumberConversionV2
                     numArray[i] = numArray[rangeMin];
                     numArray[rangeMin] = currentMax;
                 }
-            }            
+            }
             return numArray[rangeMin];
+        }
+
+        public BigInteger result = new BigInteger();
+        
+        public void GetFactorial(int n)
+        {
+            //BigInteger result = new BigInteger();
+            result = 1;
+            for (int i = 1; i < n; i++)
+            {
+                result *= (i + 1);
+            }
+            Console.WriteLine("Factorial of {0} is: {1}", n, result);
+            return;
         }
     }
 }

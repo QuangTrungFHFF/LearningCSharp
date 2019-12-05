@@ -10,6 +10,7 @@ namespace NumberConversionV2
             Console.WriteLine("1. Write a method that prints the digits of a given decimal number in a reversed order.");
             Console.WriteLine("2. Sum of two very long positive integer numbers.");
             Console.WriteLine("3. Finds the biggest element of an array. Use that method to implement sorting in descending order.");
+            Console.WriteLine("4. Write a program that calculates and prints the n! for any n in the range [1…100].");
             int chooseProblem = int.Parse(Console.ReadLine());
 
             switch (chooseProblem)
@@ -24,7 +25,7 @@ namespace NumberConversionV2
                     Console.WriteLine(result);
                     break;
 
-                case 2: //Method> 8.Sum of two very long positive integer numbers.                 
+                case 2: //Method> 8.Sum of two very long positive integer numbers.
 
                     Console.WriteLine("Please enter the first number!");
                     string firstNumInt = Console.ReadLine();
@@ -48,11 +49,11 @@ namespace NumberConversionV2
                     Random ran = new Random();
                     //Generate a random input array
                     int[] numArray = new int[20];
-                    for(int i =0; i<20;i++)
+                    for (int i = 0; i < 20; i++)
                     {
                         numArray[i] = ran.Next(0, 100);
                     }
-                    
+
                     foreach (int j in numArray)
                     {
                         Console.Write(j + " ");
@@ -66,6 +67,13 @@ namespace NumberConversionV2
                     Console.WriteLine("The biggest element:" + maxElement);
                     conv.SortArray(numArray);
                     Console.ReadKey(true);
+                    break;
+
+                case 4://Method> 10. Write a program that calculates and prints the n! for any n in the range [1…100].
+                    Console.WriteLine("Please enter n between 0 and 100!");
+                    int numInput = int.Parse(Console.ReadLine());
+                    Converter converter = new Converter();
+                    converter.GetFactorial(numInput);
 
                     break;
             }
