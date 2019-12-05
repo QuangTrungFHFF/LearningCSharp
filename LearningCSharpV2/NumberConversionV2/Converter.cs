@@ -64,12 +64,12 @@ namespace NumberConversionV2
                 secondArray[i] = num2[i];
             }
 
-            int result_max_length = (num1.Length >= num2.Length) ? (num1.Length+1) : (num2.Length+1);
+            int result_max_length = (num1.Length >= num2.Length) ? (num1.Length + 1) : (num2.Length + 1);
 
             int[] sumResult = new int[result_max_length];
             int sum = 0;
             int remainder = 0;
-            for (int i = 0; i < (result_max_length-1); i++)
+            for (int i = 0; i < (result_max_length - 1); i++)
             {
                 sum = firstArray[i] + secondArray[i] + remainder;
                 if (sum < 10)
@@ -86,7 +86,7 @@ namespace NumberConversionV2
             }
             if (remainder > 0)
             {
-                sumResult[(result_max_length-1)] = remainder;
+                sumResult[(result_max_length - 1)] = remainder;
             }
             return sumResult;
         }
@@ -108,14 +108,47 @@ namespace NumberConversionV2
         public int GetMaxElement(int[] numArray)
         {
             int maxElement = numArray[0];
-            for(int i=1; i<numArray.Length;i++)
+            for (int i = 1; i < numArray.Length; i++)
             {
-                if(maxElement<=numArray[i])
+                if (maxElement <= numArray[i])
                 {
-                    maxElement = numArray[i];                    
-                }                
+                    maxElement = numArray[i];
+                }
             }
             return maxElement;
+        }
+
+        //Sort Array using GetMaxElement method
+        public int[] SortArray(int[] numArray)
+        {
+            int arrayLength = numArray.Length;
+            int[] result = new int[arrayLength];
+            for (int i = 0; i < arrayLength; i++)
+            {
+                result[i] = GetMaxElementInRange(numArray, i, arrayLength);
+            }
+            foreach (int j in result)
+            {
+                Console.Write(j + " ");
+            }
+            return result;
+        }
+
+        //Get max element of an array in a custom range
+        public int GetMaxElementInRange(int[] numArray, int rangeMin, int rangeMax)
+        {
+            int[] numArrayMod = new int[(rangeMax - rangeMin + 1)];
+            int currentMax = numArray[rangeMin];
+            for (int i = (rangeMin + 1); i < rangeMax; i++)
+            {
+                if (currentMax < numArray[i]) // Swap position
+                {
+                    currentMax = numArray[i];
+                    numArray[i] = numArray[rangeMin];
+                    numArray[rangeMin] = currentMax;
+                }
+            }            
+            return numArray[rangeMin];
         }
     }
 }

@@ -58,7 +58,14 @@ namespace NumberConversionV2
                         Console.Write(j + " ");
                     }
                     Console.WriteLine("");
+                    Console.WriteLine("Press any key to get the biggest element!");
+                    Console.ReadKey(true);
 
+                    Converter conv = new Converter();
+                    int maxElement = conv.GetMaxElement(numArray);
+                    Console.WriteLine("The biggest element:" + maxElement);
+                    conv.SortArray(numArray);
+                    Console.ReadKey(true);
 
                     break;
             }
