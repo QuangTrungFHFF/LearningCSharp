@@ -55,7 +55,7 @@ namespace CreatingAndUsingObjects
         // Method SayMiau
         public void SayMiau()
         {
-            Console.WriteLine("Cat {0} said: Miauuuuuu!", name);
+            Console.WriteLine("{1} cat {0} said: Miauuuuuu!", name,color);
         }
     }
 }
