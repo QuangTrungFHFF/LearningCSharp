@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPLearningV1", "OOPLearningV1\OOPLearningV1.csproj", "{9949A533-967E-4C95-B626-8AF594623C18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPLearningV1", "OOPLearningV1\OOPLearningV1.csproj", "{9949A533-967E-4C95-B626-8AF594623C18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPLearningV1Tests", "OOPLearningV1Tests\OOPLearningV1Tests.csproj", "{D92A9737-CC69-4F91-9A26-F140D5865F0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPLearningV1Tests", "OOPLearningV1Tests\OOPLearningV1Tests.csproj", "{D92A9737-CC69-4F91-9A26-F140D5865F0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingAndUsingObjects", "CreatingAndUsingObjects\CreatingAndUsingObjects.csproj", "{B80ADA48-C923-49C5-95EF-1C448044B2BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountCat", "CountCat\CountCat.csproj", "{881ABE9C-3B0A-4EBB-A011-6303D2263194}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{D92A9737-CC69-4F91-9A26-F140D5865F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D92A9737-CC69-4F91-9A26-F140D5865F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D92A9737-CC69-4F91-9A26-F140D5865F0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B80ADA48-C923-49C5-95EF-1C448044B2BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80ADA48-C923-49C5-95EF-1C448044B2BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80ADA48-C923-49C5-95EF-1C448044B2BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80ADA48-C923-49C5-95EF-1C448044B2BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{881ABE9C-3B0A-4EBB-A011-6303D2263194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{881ABE9C-3B0A-4EBB-A011-6303D2263194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{881ABE9C-3B0A-4EBB-A011-6303D2263194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{881ABE9C-3B0A-4EBB-A011-6303D2263194}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
