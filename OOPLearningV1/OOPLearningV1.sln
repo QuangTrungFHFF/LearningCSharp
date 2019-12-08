@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPLearningV1", "OOPLearnin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPLearningV1Tests", "OOPLearningV1Tests\OOPLearningV1Tests.csproj", "{D92A9737-CC69-4F91-9A26-F140D5865F0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingAndUsingObjects", "CreatingAndUsingObjects\CreatingAndUsingObjects.csproj", "{B80ADA48-C923-49C5-95EF-1C448044B2BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreatingAndUsingObjects", "CreatingAndUsingObjects\CreatingAndUsingObjects.csproj", "{B80ADA48-C923-49C5-95EF-1C448044B2BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountCat", "CountCat\CountCat.csproj", "{881ABE9C-3B0A-4EBB-A011-6303D2263194}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountCat", "CountCat\CountCat.csproj", "{881ABE9C-3B0A-4EBB-A011-6303D2263194}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomAdsProject", "RandomAdsProject\RandomAdsProject.csproj", "{C43BDC82-4FCD-4D08-B79D-38E5A86B73DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{881ABE9C-3B0A-4EBB-A011-6303D2263194}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{881ABE9C-3B0A-4EBB-A011-6303D2263194}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{881ABE9C-3B0A-4EBB-A011-6303D2263194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C43BDC82-4FCD-4D08-B79D-38E5A86B73DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C43BDC82-4FCD-4D08-B79D-38E5A86B73DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C43BDC82-4FCD-4D08-B79D-38E5A86B73DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C43BDC82-4FCD-4D08-B79D-38E5A86B73DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
