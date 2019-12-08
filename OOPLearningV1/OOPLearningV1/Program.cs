@@ -14,6 +14,8 @@ namespace OOPLearningV1
             Console.WriteLine("4. standard output the count of days, hours, and minutes, which have passes since the computer is started.");
             Console.WriteLine("5. Finds the hypotenuse of a right triangle.");
             Console.WriteLine("6. Calculates the area of a triangle.");
+            Console.WriteLine("7.Split string");
+            
 
             int chooseInput = int.Parse(Console.ReadLine());
             Calendar calendar = new Calendar();
@@ -177,6 +179,19 @@ namespace OOPLearningV1
                             Console.WriteLine("Area of the triangle is: {0:N2}", area);
                             break;
                     }
+                    break;
+                    //Chap 11> 9.Split string
+                case 7:
+                    string rawString = "25 47 85 632 541 87 52 145 23 65 ";
+                    Console.WriteLine("String: "+rawString);
+                    char[] separator = new char[] { ' ' };
+                    string[] resultString = rawString.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+                    int sum = 0;
+                    foreach(string s in resultString)
+                    {
+                        sum += int.Parse(s);
+                    }
+                    Console.WriteLine("Sum of the string is: {0}", sum);
                     break;
             }
         }
