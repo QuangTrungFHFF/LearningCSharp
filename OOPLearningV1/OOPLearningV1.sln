@@ -13,7 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountCat", "CountCat\CountC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomAdsProject", "RandomAdsProject\RandomAdsProject.csproj", "{C43BDC82-4FCD-4D08-B79D-38E5A86B73DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryCatchFinally", "TryCatchFinally\TryCatchFinally.csproj", "{3A7CEB47-9922-493D-A86E-C754611D2D04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryCatchFinally", "TryCatchFinally\TryCatchFinally.csproj", "{3A7CEB47-9922-493D-A86E-C754611D2D04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{385C1EEB-6B55-4758-B854-18801E18D37C}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
