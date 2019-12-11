@@ -21,12 +21,11 @@ namespace ReadInterger
             }
             catch (FormatException ex)
             {
-                Console.WriteLine("Input is not an integer number!" + ex.Message);
-                throw;
+                Console.WriteLine("Input is not an integer number!" + ex.Message);                
             }
-            catch(ArgumentOutOfRangeException)
+            catch (ArgumentOutOfRangeException)
             {
-                throw;
+                Console.WriteLine("Input element mus be bigger then previous elements!");
             }
             foreach (int j in numberList)
             {
