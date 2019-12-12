@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadingBinaryFiles", "Creat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WritingDataLib", "WritingDataLib\WritingDataLib.csproj", "{9DD6583E-0E95-4676-BFAF-231D880C7F2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadIntergerFromTextFile", "ReadIntergerFromTextFile\ReadIntergerFromTextFile.csproj", "{0BE5559F-3A5D-49D2-86E3-BC4179BB6767}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9DD6583E-0E95-4676-BFAF-231D880C7F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DD6583E-0E95-4676-BFAF-231D880C7F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DD6583E-0E95-4676-BFAF-231D880C7F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BE5559F-3A5D-49D2-86E3-BC4179BB6767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BE5559F-3A5D-49D2-86E3-BC4179BB6767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BE5559F-3A5D-49D2-86E3-BC4179BB6767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BE5559F-3A5D-49D2-86E3-BC4179BB6767}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

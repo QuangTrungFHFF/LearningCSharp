@@ -4,6 +4,9 @@ using WritingDataLib;
 
 namespace ReadingBinaryFiles
 {
+    /// <summary>
+    /// Read a binary file. Create the same binary file. Compare 2 files
+    /// </summary>
     internal class Program
     {
         private static string _fileNameIn;
@@ -61,11 +64,11 @@ namespace ReadingBinaryFiles
                 Console.WriteLine("-or-");
                 Console.WriteLine("The caller does not have the required permission");
             }
-            catch(ArgumentException)
+            catch (ArgumentException)
             {
                 Console.WriteLine("Invalid Path");
             }
-            catch(IOException ex)
+            catch (IOException ex)
             {
                 Console.WriteLine("There is an error when modify the file!");
                 Console.Error.WriteLine(ex.Message);
